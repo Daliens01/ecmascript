@@ -1,0 +1,8 @@
+const button = document.getElementById("btn")
+
+button.addEventListener("click",async ()=>{
+    const module = await import("./module.js")
+    console.log(module);
+    module.hello();
+})
+//llama de forma dinamica modulos que al principio no estan referenciados o instanciados
